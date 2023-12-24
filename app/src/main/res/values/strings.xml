@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Google Maps Demo</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="location_not_enabled_msg">Location Not Enabled</string>
+    <string name="my_current_location">Current Location</string>
+    <string name="calculate_route">Calculate Route</string>
+    <string name="destination_location">Destination Location</string>
+</resources>

@@ -1,0 +1,47 @@
+[versions]
+core = "1.12.0"
+appcompat = "1.6.1"
+material = "1.11.0"
+constraintlayout = "2.1.4"
+activity = "1.8.2"
+lifecycle = "2.6.2"
+hilt = "2.49"
+coroutine = "1.7.3"
+androidGradlePlugin = "8.2.0"
+kotlin = "1.9.10"
+secrets = "2.0.1"
+mapsKtx = "5.0.0"
+playServicesLocation = "21.0.1"
+googleMapsServices = "2.2.0"
+
+[libraries]
+core-ktx = { module = "androidx.core:core-ktx" , version.ref = "core" }
+appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
+material = { module = "com.google.android.material:material", version.ref = "material" }
+constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayout" }
+activity-ktx = { module = "androidx.activity:activity-ktx" , version.ref = "activity" }
+lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
+lifecycle-viewmodel-savedstate = { module = "androidx.lifecycle:lifecycle-viewmodel-savedstate", version.ref = "lifecycle" }
+androidx-lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle" }
+androidx-lifecycle-common-java8 = { module = "androidx.lifecycle:lifecycle-common-java8", version.ref = "lifecycle" }
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
+hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hilt" }
+coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutine" }
+coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutine" }
+maps-ktx = { module = "com.google.maps.android:maps-ktx", version.ref = "mapsKtx" }
+maps-utils-ktx = { module = "com.google.maps.android:maps-utils-ktx", version.ref = "mapsKtx" }
+play-services-location = { group = "com.google.android.gms", name = "play-services-location", version.ref = "playServicesLocation" }
+google-maps-services = { module = "com.google.maps:google-maps-services", version.ref = "googleMapsServices" }
+
+[bundles]
+views = ["appcompat", "material", "constraintlayout"]
+lifecycle = ["lifecycle-viewmodel-ktx", "lifecycle-viewmodel-savedstate", "androidx-lifecycle-runtime-ktx", "androidx-lifecycle-common-java8"]
+coroutines = ["coroutines-core", "coroutines-android"]
+maps = ["maps-ktx", "maps-utils-ktx", "play-services-location", "google-maps-services"]
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin"}
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin"}
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt"}
+secrets = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "secrets"}
