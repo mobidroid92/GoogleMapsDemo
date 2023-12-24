@@ -1,4 +1,4 @@
-# Gemini Demo
+# Google Maps Demo
 
 This Android app shows a demo of Google Maps and DirectionsApi.
 
